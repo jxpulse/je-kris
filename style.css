@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e7f9ff;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero img {
+  margin-top: 40px;
+  height: 500px;
+}
+
+/* Content Section - Introduction */
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5em;
+  gap: 1em;
+}
+
+.introduction img {
+  border: solid 16px #9fe7ff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  height: 300px;
+}
+
+.introduction p {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Content Section - My Skills */
+
+.myskills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+  gap: 1em;
+  background-color: #e7f9ff;
+}
+
+.skill1,
+.skill2,
+.skill3,
+.skill4,
+.skill5 {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  width: 900px;
+  margin-bottom: 3rem;
+}
+
+.myskills h2 {
+  font-size: 2.5rem;
+  color: #5bd6ff;
+  padding-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.myskills img {
+  height: 250px;
+  border: solid 16px #9fe7ff;
+  border-radius: 50%;
+}
+
+.myskills p {
+  max-width: 700px;
+  margin-top: 0.7rem;
+}
+
+.skill5 {
+  margin-bottom: 5rem;
+}
+
+/* Get in Touch */
+
+.getintouch {
+  padding: 5rem 0 3rem 0;
+  text-align: center;
+}
+
+.getintouch h2 {
+  font-size: 2.5rem;
+  color: #5bd6ff;
+  margin-bottom: 3rem;
+}
+
+.getintouch h3 {
+  color: #0d91bd;
+  margin-bottom: 1rem;
+}
+
+.getintouch p {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #14c4ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2.4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5ad6ff;
+}
+/* Footer */
+
+.footer {
+  background-color: #0079a1;
+  text-align: center;
+  padding: 3em 0 2em 0;
+}
+
+.link-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin-bottom: 2em;
+}
+
+.link-icons img {
+  filter: invert(100%);
+  transition: transform 0.3s ease;
+}
+
+.link-icons img:hover {
+  transform: scale(1.3);
+}
+.footer p {
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 3rem;
+}
+
+/* Media Queries ============================================================================================================================================== */
+
+@media (max-width: 1200px) {
+  .hero img {
+    margin-top: 40px;
+    height: 400px;
+  }
+
+  .introduction img {
+    border: solid 16px #9fe7ff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 960px) {
+  .skill1,
+  .skill2,
+  .skill3,
+  .skill4,
+  .skill5 {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    width: 650px;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill1,
+  .skill2,
+  .skill3,
+  .skill4,
+  .skill5 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 500px;
+    margin-bottom: 2rem;
+  }
+
+  .hero img {
+    margin-top: 30px;
+    height: 350px;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .introduction {
+    padding-top: 3em;
+  }
+
+  .introduction img {
+    border: solid 12px #9fe7ff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    height: 200px;
+  }
+
+  .introduction p {
+    width: 400px;
+  }
+
+  .myskills img {
+    height: 150px;
+    border: solid 10px #9fe7ff;
+    border-radius: 50%;
+  }
+
+  .myskills h2 {
+    font-size: 2rem;
+    color: #5bd6ff;
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .myskills p {
+    max-width: 500px;
+    margin-top: 0.7rem;
+  }
+
+  .getintouch {
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+  }
+
+  .getintouch h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .getintouch p {
+    padding: 0 3rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 12px 28px;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  .footer {
+    background-color: #0079a1;
+    text-align: center;
+    padding: 2em 0 1em 0;
+  }
+
+  .link-icons {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin-bottom: 0.5em;
+  }
+
+  .link-icons img:hover {
+    transform: scale(1.2);
+  }
+  .footer p {
+    font-size: 0.8rem;
+    margin-top: 2.4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .skill1,
+  .skill2,
+  .skill3,
+  .skill4,
+  .skill5 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .myskills h3,
+  .myskills p,
+  .getintouch h3,
+  .getintouch p {
+    margin: 0 2rem;
+  }
+  button {
+    margin-top: 1.7rem;
+  }
+}
+
+@media (max-width: 430px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  .hero img {
+    height: 300px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .introduction img {
+    border: solid 8px #9fe7ff;
+    margin-bottom: 8px;
+    height: 150px;
+  }
+
+  .introduction p {
+    width: 100vw;
+    padding: 0 2rem;
+    text-align: left;
+  }
+
+  .myskills img {
+    height: 120px;
+    border: solid 6px #9fe7ff;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 369px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero img {
+    height: 270px;
+  }
+  .introduction img {
+    margin-bottom: 7px;
+    height: 130px;
+  }
+  .myskills h2,
+  .getintouch h2 {
+    font-size: 1.7rem;
+  }
+
+  button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+  }
+
+  .link-icons {
+    gap: 2em;
+    margin-bottom: 0.3em;
+  }
+  .footer p {
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 319px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .hero img {
+    height: 220px;
+  }
+  .introduction img {
+    height: 110px;
+  }
+  .link-icons {
+    transform: scale(0.8);
+    gap: 2em;
+    margin-bottom: 0.3em;
+  }
+  .link-icons img:hover {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 252px) {
+  .hero {
+    background-color: transparent;
+  }
+
+  h1 {
+    font-size: 1rem;
+    width: 100vw;
+    text-align: left;
+    padding: 0 2rem;
+  }
+  .hero img {
+    height: 180px;
+  }
+  .hero p {
+    text-align: left;
+    padding: 0 2rem;
+  }
+  .myskills {
+    background-color: transparent;
+  }
+  .footer {
+    background-color: transparent;
+  }
+  .footer p {
+    font-size: 0.6rem;
+    color: black;
+  }
+  .link-icons {
+    transform: scale(0.8);
+    gap: 1em;
+    margin-bottom: 0.3em;
+  }
+  .link-icons img {
+    filter: none;
+    transition: transform 0.3s ease;
+  }
+}
